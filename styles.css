@@ -23,12 +23,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f5f8ff;
     border: 1px solid red;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f5f8ff;
 }
 
 .header{
@@ -424,6 +427,7 @@ nav ul li a.active{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    margin-top: 20px;
 }
 
 
@@ -449,6 +453,8 @@ nav ul li a.active{
     justify-content: center;
     flex-direction: column;
     gap: 15px;
+    text-align: center;
+    position: relative;
 }
 
 
@@ -458,15 +464,124 @@ nav ul li a.active{
     background-color: transparent;
     color: #ffffff;
     font-weight: 600;
+    z-index: 1;
 }
 
+.grid-one p{
+    font-family: "Noto Serif", serif;
+    font-size: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 1;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.grid-one::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
 
 .grid-two{
     width: 350px;
     height: 200px;
     border-radius: 15px;
+    background-image: url(assets/deal-ana.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.grid-two h3{
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 1;
+}
+
+
+.grid-two p{
+    font-family: "Noto Serif", serif;
+    font-size: 16px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 1;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+
+.grid-two::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.child{
+    width: 670px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
     background-image: url(assets/deal-zabo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+
+
+.child::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.child h3{
+    font-family: "Noto Serif", serif;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: capitalize;
+    z-index: 1;
+}
+
+
+.child p{
+    font-family: "Noto Serif", serif;
+    font-size: 26px;
+    text-transform: capitalize;
+    color: #ffffff;
+    z-index: 1;
+    text-decoration: underline;
 }
