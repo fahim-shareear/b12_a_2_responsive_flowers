@@ -19,9 +19,9 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">home</a></li>
-                    <li><a href="shop.html">shop</a></li>
-                    <li><a href="about_us.html">about us</a></li>
+                    <li><a href="index.html" class=" nav_link active">home</a></li>
+                    <li><a href="shop.html" class="nav_link">shop</a></li>
+                    <li><a href="about_us.html" class="nav_link">about us</a></li>
                 </ul>
                 <div class="cart">
                     <div class="icon">
@@ -34,5 +34,16 @@
     </header>
     <main class="main"></main>
     <footer class="footer"></footer>
+
+
+<script>
+  const links = document.querySelectorAll('.nav_link');
+  links.forEach(link => {
+    link.addEventListener('click', function () {
+      links.forEach(l => l.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+</script>
 </body>
 </html>
