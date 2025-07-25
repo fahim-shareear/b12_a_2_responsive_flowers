@@ -281,3 +281,86 @@ nav ul li a.active{
     transform: scale(1.0);
     box-shadow: 0 0 8px 10px;
 }
+
+
+
+.flower_lover{
+    width: 100%;
+    height: 650px;
+}
+
+
+.f_main{
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.brawl{
+    width: 100%;
+    height: 500px;
+    margin-top: 80px;
+    display: flex;
+}
+
+
+.f_left{
+    width: 50%;
+    height: 100%;
+}
+
+.img_container{
+    position: relative;
+}
+
+.main_img{
+    width: 450px;
+    height: 500px;
+    display: block;
+}
+
+.badge{
+    width: 200px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 400px;
+    right: 45px;
+    border-radius: 50%;
+}
+
+.f_right{
+    width: 50%;
+    height: 100%;
+}
+
+.right_title{
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.right_title h3{
+    font-family: "Noto Serif", serif;
+    font-size: 36px;
+    text-transform: capitalize;
+    text-wrap: wrap;
+}
+
+
+.right_para{
+    width: 100%;
+    height: auto;
+}
+
+.right_para ul li{
+    font-size: 19px;
+    color: grey;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.right_para ul {
+    width: 450px;
+    height: auto;
+    margin-left: 30px;
+}
