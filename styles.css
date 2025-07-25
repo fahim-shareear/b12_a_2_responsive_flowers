@@ -785,7 +785,7 @@ nav ul li a.active{
     }
 
     nav{
-        display: none;
+        visibility: hidden;
     }
 
     .kart{
