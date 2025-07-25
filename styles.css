@@ -23,7 +23,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 html{
@@ -277,6 +277,8 @@ nav ul li a.active{
     text-transform: uppercase;
     font-size: 15px;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 
@@ -330,7 +332,19 @@ nav ul li a.active{
     bottom: 400px;
     right: 45px;
     border-radius: 50%;
+    animation: animate 0.4s infinite;
 }
+
+@keyframes animate{
+    0%{
+        rotate: -180deg;
+    }
+
+    100%{
+        rotate: 18deg;
+    }
+}
+
 
 .f_right{
     width: 50%;
@@ -720,3 +734,26 @@ nav ul li a.active{
 }
 
 
+.s-main{
+    width: 100%;
+    height: 70px;
+}
+
+.s-grid{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.s-1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.s-1 img{
+    width: 100%;
+    height: 100%;
+}
