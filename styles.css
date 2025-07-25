@@ -771,7 +771,7 @@ nav ul li a.active{
 }
 
 
-@media (max-width: 430px) {
+@media screen and (min-width: 360px) and (max-width: 430px) {
     *{
         margin: 0;
         padding: 0;
