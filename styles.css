@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
-
+/*
 .d_small{
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
@@ -8,22 +8,13 @@
   font-style: normal;
 }
 
-/* 
-.noto-serif-<uniquifier> {
-  font-family: "Noto Serif", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-} */
+
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 html{
@@ -384,7 +375,7 @@ nav ul li a.active{
 
 
 
-/* SECTION LAYOUT */
+
 .offer {
   width: 100%;
   height: auto;
@@ -653,7 +644,6 @@ nav ul li a.active{
     width: 75%;
     height: 45px;
     padding: 15px;
-    /* display: flex; */
     flex: 1;
 }
 
@@ -664,8 +654,6 @@ nav ul li a.active{
     height: 45px;
     background-color: #e95a08;
     color: #ffffff;
-    /* border: 1px solid #e95a08;
-    border-radius: 0 6px 6px 0; */
     cursor: pointer;
     text-transform: capitalize;
     font-size: 15px;
@@ -699,10 +687,7 @@ nav ul li a.active{
     justify-content: center;
 }
 
-/* 
-.f-logo img{
-    padding: 25px 0;
-} */
+
 
 
 .f-logo p{
@@ -717,9 +702,6 @@ nav ul li a.active{
 .menus{
     width: 100%;
     height: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-evenly; */
 }
 
 .menus ul{
@@ -763,8 +745,236 @@ nav ul li a.active{
 .s-1 img{
     width: 100%;
     height: 100%;
+} */
+
+
+
+
+@media (max-width: 430px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    
+    .header{
+        width: 100%;
+        height: 500px;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 60px;
+        border: 1px solid red;
+    }
+
+    nav{
+        visibility: hidden;
+    }
+
+
+    .logo{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo img{
+        width: 65px;
+        height: 35px;
+    }
+
+    .kart{
+        width: 100px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 55px;
+    }
+
+    .kart .icon{
+        font-family: "Noto Serif", sans-serif;
+        font-size: 1.0rem;
+        padding: 15px;
+    }
+
+
+    .kart p{
+        text-transform: capitalize;
+        font-family: "Noto Serif", sans-serif;
+        font-size: 0.9rem;
+    }
+
+    .banner{
+        width: 100%;
+        height: 450px;
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .banner_title{
+        width: 100%;
+        height: 225px;
+    }
+
+    .titile_head{
+        width: 100%;
+        height: 60px;
+    }
+
+    .title_head h1{
+        text-transform: uppercase;
+        text-wrap: wrap;
+        width: 60%;
+        padding: 20px 0;
+    }
+
+    .title_head h1 span{
+        color: #e95a08;
+    }
+
+    .titile_head p{
+        color: grey;
+        font-family: "Inter Tight", sans-serif;
+        font-size: 0.8rem;
+    }
+
+    .banner_img{
+        width: 100%;
+        height: 225px;
+    }
+
+    .banner_img img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .main{
+        width: 100%;
+        height: 550px;
+    }
+
+
+    .shop{
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+
+
+    .shop_title{
+        width: 100%;
+        height: 65px;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+
+    .shop_title h1{
+        font-family: "Noto Serif", serif;
+        font-size: 2.0rem;
+        text-transform: capitalize;
+        font-weight: 600;
+        padding: 8px;
+    }
+
+
+    .shop_title h1 span{
+        color: #e95a08;
+    }
+
+
+    .shop_title p{
+        font-family: "Noto Serif", serif;
+        font-size: 0.8rem;
+        color: grey;
+        font-weight: 500;
+        padding: 8px;
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    .shop_grid_card{
+        width: 100%;
+        height: 750px;
+        margin-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 40px 30px;
+    }
+
+    .card{
+        width: 172px;
+        height: 390px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cardimg{
+        width: 100%;
+        height: 230px;
+    }
+
+    .cardimg img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .card_title{
+        width: 100%;
+        height: 70px;
+        text-align: center;
+    }
+
+    .card_title h3{
+        font-family: "Inter Tight", sans-serif;
+        font-size: 16px;
+        text-transform: capitalize;
+        font-weight: 500;
+        padding: 10px;
+    }
+
+    .card_title p{
+        font-family: "Inter Tight", sans-serif;
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 4px;
+    }
+
+
+    .cardbtn{
+        width: 100%;
+        height: 40px;
+    }
+
+    .cardbtn button{
+        width: 100%;
+        height: 100%;
+        background-color: #e95a08;
+        color: #fff;
+        text-transform: uppercase;
+        text-align: center;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        font-family: "Inter Tight", sans-serif;
+        cursor: pointer;
+    }
 }
-
-
-
-
