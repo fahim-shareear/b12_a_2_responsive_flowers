@@ -61,7 +61,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -74,7 +74,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -126,7 +126,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -139,7 +139,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
 
@@ -152,7 +152,7 @@
                         <p class="d_small">20 <span>usd</span></p>
                     </div>
                     <div class="cardbtn">
-                        <button class="d_small">add to cart</button>
+                        <button class="d_small add-to-cart-btn">add to cart</button>
                     </div>
                 </div>
             </div>
@@ -281,5 +281,16 @@
     });
   });
 </script>
+
+<script>
+  const buttons = document.querySelectorAll('.add-to-cart-btn');
+
+  buttons.forEach(button => {
+    button.addEventListener('click', function () {
+      alert('Item has been added to your cart!');
+    });
+  });
+</script>
+
 </body>
 </html>
