@@ -1,0 +1,239 @@
+/* Responsive Styles */
+
+/* Large tablets and below */
+@media (max-width: 1024px) {
+  .navigation,
+  .banner,
+  .main,
+  .f_main,
+  .offer-main,
+  .offer-grid {
+    width: 95%;
+    max-width: 100%;
+  }
+  .shop {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .shop_title {
+    width: 90%;
+  }
+  .shop_grid_card {
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+  }
+  .card {
+    width: 95%;
+    min-width: 220px;
+  }
+  .banner_title,
+  .banner_img,
+  .f_left,
+  .f_right {
+    width: 100%;
+  }
+  .brawl {
+    flex-direction: column;
+    height: auto;
+  }
+  .main_img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+  }
+  .badge {
+    width: 120px;
+    height: 120px;
+    bottom: 320px;
+    right: 10px;
+  }
+  .offer-card {
+    grid-template-columns: 1fr;
+  }
+  .master,
+  .child {
+    width: 100%;
+    max-width: 100%;
+  }
+  .grid-one,
+  .grid-two,
+  .child {
+    width: 100%;
+    min-width: 0;
+  }
+  .newsletter .main-join,
+  .join-title,
+  .input {
+    width: 95%;
+    max-width: 100%;
+  }
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+  nav {
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cart {
+    margin: 10px 0;
+  }
+  .banner {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .banner_title,
+  .banner_img {
+    width: 100%;
+    text-align: center;
+  }
+  .banner_img img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .shop_grid_card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .card {
+    width: 95%;
+    min-width: 180px;
+  }
+  .f_main {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .brawl {
+    flex-direction: column;
+    height: auto;
+  }
+  .main_img {
+    max-width: 250px;
+  }
+  .badge {
+    width: 80px;
+    height: 80px;
+    bottom: 200px;
+    right: 0;
+  }
+  .offer-card {
+    grid-template-columns: 1fr;
+  }
+  .master,
+  .child {
+    width: 100%;
+    max-width: 100%;
+  }
+  .newsletter {
+    height: auto;
+    padding: 40px 0;
+  }
+  .main-join,
+  .join-title,
+  .input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .input {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .input input,
+  .input button {
+    width: 100%;
+    border-radius: 6px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .navigation,
+  .banner,
+  .main,
+  .f_main,
+  .offer-main,
+  .offer-grid,
+  .shop,
+  .shop_title,
+  .newsletter,
+  .main-join,
+  .join-title,
+  .input {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 5px;
+  }
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+  .banner_title .title_head h1,
+  .shop_title h1,
+  .join-title h3 {
+    font-size: 28px;
+    padding: 8px;
+  }
+  .shop_grid_card {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .card {
+    width: 98%;
+    min-width: 120px;
+    height: auto;
+  }
+  .main_img {
+    max-width: 100%;
+    height: auto;
+  }
+  .badge {
+    display: none;
+  }
+  .right_title h3 {
+    font-size: 22px;
+  }
+  .right_para ul {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 5px;
+  }
+  .offer-card,
+  .master,
+  .child,
+  .grid-one,
+  .grid-two {
+    width: 100%;
+    min-width: 0;
+  }
+  .child h3 {
+    font-size: 22px;
+  }
+  .child p {
+    font-size: 16px;
+  }
+  .footer-body {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+  }
+  .important-links ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .s-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
