@@ -151,3 +151,68 @@ nav ul li a.active{
     font-size: 17px;
     color: grey;
 }
+
+
+/* responsive design for the header section */
+
+
+@media (max-width: 430px) {
+  /* Navigation Layout */
+  .navigation {
+    width: 100%;
+    padding: 0 20px;
+    height: 80px;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: auto;
+    height: 100%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none; /* hide nav menu */
+  }
+
+  .cart {
+    margin: 0;
+  }
+
+  /* Banner Layout */
+  .banner {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse; /* stack items reverse vertically */
+    padding: 20px;
+  }
+
+  .banner_img,
+  .banner_title {
+    width: 100%;
+  }
+
+  .banner_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .banner_title .title_head {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .banner_title .title_head h1 {
+    font-size: 28px;
+  }
+
+  .banner_title .title_head p {
+    font-size: 15px;
+    padding: 15 00px;
+  }
+}
