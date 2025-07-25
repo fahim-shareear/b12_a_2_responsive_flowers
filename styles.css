@@ -225,6 +225,7 @@ nav ul li a.active{
     width: 280px;
     height: 380px;
     margin: auto;
+    transition: all 0.5s linear;
 }
 
 
@@ -272,6 +273,11 @@ nav ul li a.active{
     color: #f5f8ff;
     text-transform: uppercase;
     font-size: 15px;
+    cursor: pointer;
 }
 
 
+.card:hover{
+    transform: scale(1.0);
+    box-shadow: 0 0 8px 10px;
+}
