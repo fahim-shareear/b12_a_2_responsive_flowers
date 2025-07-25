@@ -766,3 +766,40 @@ nav ul li a.active{
 }
 
 
+.kart{
+    visibility: hidden;
+}
+
+
+@media (max-width: 430px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: 1px solid red;
+    }
+    
+    .header{
+        width: 100%;
+        height: 56px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .kart{
+        visibility: visible;
+    }
+
+    .navigation{
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
