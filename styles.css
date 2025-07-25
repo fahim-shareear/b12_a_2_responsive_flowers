@@ -404,3 +404,69 @@ nav ul li a.active{
   font-weight: 400;
 }
 
+.offer-grid{
+    max-width: 1140px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.offer-main{
+    max-width: 1140px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+
+.offer-card{
+    max-width: 95%;
+    max-height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+.master{
+    width: 400px;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+
+.grid-one{
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    background-image: url(assets/deal-bloom.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.grid-one h3{
+    font-family: "Noto Serif", serif;
+    font-size: 18px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+.grid-two{
+    width: 350px;
+    height: 200px;
+    border-radius: 15px;
+    background-image: url(assets/deal-zabo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
