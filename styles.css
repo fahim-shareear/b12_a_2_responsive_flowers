@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.d_small{
+  font-family: "Inter Tight", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
 /* 
 .noto-serif-<uniquifier> {
   font-family: "Noto Serif", serif;
@@ -14,6 +24,7 @@
     padding: 0;
     box-sizing: border-box;
     background-color: #f5f8ff;
+    border: 1px solid red;
 }
 
 html{
@@ -153,66 +164,114 @@ nav ul li a.active{
 }
 
 
-/* responsive design for the header section */
-
-
-@media (max-width: 430px) {
-  /* Navigation Layout */
-  .navigation {
+.main{
     width: 100%;
-    padding: 0 20px;
-    height: 80px;
-    justify-content: space-between;
-  }
-
-  nav {
-    width: auto;
-    height: 100%;
-    margin-right: 0;
-    display: flex;
-    align-items: center;
-  }
-
-  nav ul {
-    display: none; /* hide nav menu */
-  }
-
-  .cart {
-    margin: 0;
-  }
-
-  /* Banner Layout */
-  .banner {
-    width: 100%;
-    height: auto;
-    flex-direction: column-reverse; /* stack items reverse vertically */
-    padding: 20px;
-  }
-
-  .banner_img,
-  .banner_title {
-    width: 100%;
-  }
-
-  .banner_img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .banner_title .title_head {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .banner_title .title_head h1 {
-    font-size: 28px;
-  }
-
-  .banner_title .title_head p {
-    font-size: 15px;
-    padding: 15 00px;
-  }
+    height: 100vh;
 }
+
+
+.shop{
+    max-width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+
+.shop_title{
+    width: 700px;
+    height: 150px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+.shop_title h1{
+    font-family: "Noto Serif", serif;
+    font-size: 46px;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding: 15px;
+}
+
+
+.shop_title h1 span{
+    color: #e95a08;
+}
+
+
+.shop_title p{
+    font-family: "Noto Serif", serif;
+    font-size: 16px;
+    color: grey;
+    font-weight: 500;
+    padding: 8px;
+}
+
+
+.shop_grid_card{
+    max-width: 100%;
+    height: 750px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 05px;
+}
+
+
+.card{
+    width: 280px;
+    height: 380px;
+    margin: auto;
+}
+
+
+.cardimg{
+    width: 100%;
+    height: 270px;
+}
+
+.cardimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.card_title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+
+.card_title p{
+    text-transform: uppercase;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card_title p span{
+    font-weight: 600;
+}
+
+
+.cardbtn{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.cardbtn button{
+    width: 100%;
+    height: 100%;
+    background: #e95a08;
+    color: #f5f8ff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+
