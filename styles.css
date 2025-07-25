@@ -101,3 +101,49 @@ nav ul li a.active{
     color: #252432;
     padding: 8px;
 }
+
+
+.banner{
+    width: 1140px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.banner_title{
+    width: 50%
+}
+
+
+.banner_img{
+    width: 50%;
+}
+
+
+.banner_title .title_head{
+    width: 80%;
+    height: 90px;
+}
+
+
+.banner_title .title_head h1{
+    font-family: "Noto Serif", serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-wrap: wrap;
+}
+
+
+.banner_title .title_head h1 span{
+    color: #e95a08;
+}
+
+.banner_title .title_head p{
+    font-family: "Noto Serif", serif;
+    font-size: 17px;
+    color: grey;
+}
