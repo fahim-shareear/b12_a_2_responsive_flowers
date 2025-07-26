@@ -25,9 +25,10 @@ body{
     background-color: #f5f8ff;
 }
 
-.header{
+header{
     width: 100%;
     height: 100vh;
+    
 }
 
 
@@ -67,6 +68,9 @@ nav ul{
     justify-content: space-evenly;
 }
 
+.nav_link{
+    display: block;
+}
 
 nav ul li{
     list-style: none;
@@ -102,6 +106,10 @@ nav ul li a.active{
     font-size: 19px;
 }
 
+
+.kart{
+    display: none;
+}
 
 .cart p{
     font-family: "Noto Serif", serif;
@@ -142,8 +150,7 @@ nav ul li a.active{
 .banner_title .title_head h1{
     font-family: "Noto Serif", serif;
     text-transform: uppercase;
-    font-size: 50px;
-    text-wrap: wrap;
+    font-size: 3.0rem;
 }
 
 
@@ -750,106 +757,49 @@ nav ul li a.active{
 
 
 
-@media screen and (min-width: 430px) and (max-width: 570px){
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    
-    .header{
-        width: 100%;
-        height: 500px;
-    }
-
+@media screen and (min-width: 0px) and (max-width: 430px) {
     .navigation{
         width: 100%;
-        height: 60px;
+        max-height: 50px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
         border: 1px solid red;
+        height: 600px;
+    }
+    .nav_link{
+        display: none;
     }
 
-    nav{
-        visibility: hidden;
+    .cart{
+        margin-right: 15px;
     }
-
 
     .logo{
-        width: 100%;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        width: 100px;
+        height: 100%
     }
 
     .logo img{
-        width: 65px;
-        height: 35px;
-    }
-
-    .kart{
-        width: 100px;
+        width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-right: 55px;
     }
 
-    .kart .icon{
-        font-family: "Noto Serif", sans-serif;
-        font-size: 1.0rem;
-        padding: 15px;
-    }
-
-
-    .kart p{
-        text-transform: capitalize;
-        font-family: "Noto Serif", sans-serif;
-        font-size: 0.9rem;
-    }
 
     .banner{
         width: 100%;
-        height: 450px;
-        margin-top: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
     }
 
-
-    .banner_title{
-        width: 100%;
-        height: 225px;
-    }
-
-    .titile_head{
-        width: 100%;
-        height: 60px;
-    }
-
-    .title_head h1{
-        text-transform: uppercase;
-        text-wrap: wrap;
-        width: 60%;
-        padding: 20px 0;
-    }
-
-    .title_head h1 span{
-        color: #e95a08;
-    }
-
-    .titile_head p{
-        color: grey;
-        font-family: "Inter Tight", sans-serif;
-        font-size: 0.8rem;
-    }
-
     .banner_img{
         width: 100%;
-        height: 225px;
+        height: 200px;
     }
 
     .banner_img img{
@@ -858,498 +808,75 @@ nav ul li a.active{
     }
 
 
+    .banner_title{
+        width: 100%;
+        height: 280px;
+    }
+
+    .banner_title{
+        width: 100%;
+        height: 180px;
+        /* border: 1px solid red */
+    }
+
+    .title_head{
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner_title .title_head h1{
+        font-size: 1.7rem;
+        padding: 15px 0;
+    }
+
+
+    .banner_title .title_head p{
+        font-size: 0.8rem;
+    }
+
     .main{
         width: 100%;
-        /* height: 550px; */
     }
-
-
-    .shop{
-        max-width: 100%;
-        height: 100%;
-        margin: 0 auto;
-    }
-
-
 
     .shop_title{
         width: 100%;
-        height: 65px;
-        margin: 0 auto;
-        text-align: center;
-        margin-bottom: 15px;
     }
-
 
     .shop_title h1{
-        font-family: "Noto Serif", serif;
         font-size: 2.0rem;
-        text-transform: capitalize;
-        font-weight: 600;
-        padding: 8px;
     }
-
-
-    .shop_title h1 span{
-        color: #e95a08;
-    }
-
 
     .shop_title p{
-        font-family: "Noto Serif", serif;
-        font-size: 0.8rem;
-        color: grey;
-        font-weight: 500;
-        padding: 8px;
-        width: 65%;
-        margin: 0 auto;
+        font-size: 0.9rem;
     }
 
     .shop_grid_card{
-        width: 100%;
-        /* height: 750px; */
-        margin-bottom: 30px;
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 10px;
-        padding: 40px 30px;
+        gap: 5px;
+        padding: 12px;
+        border: 1px solid red;
+        height: 100%;
     }
 
     .card{
-        width: 172px;
-        height: 390px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        width: 180px;
+        display: grid;
     }
 
-    .cardimg{
-        width: 100%;
-        height: 230px;
-    }
-
-    .cardimg img{
-        width: 100%;
+    .main{
         height: 100%;
     }
 
-    .card_title{
-        width: 100%;
-        height: 70px;
-        text-align: center;
-    }
-
-    .card_title h3{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 16px;
-        text-transform: capitalize;
-        font-weight: 500;
-        padding: 10px;
-    }
-
-    .card_title p{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding: 4px;
-    }
-
-
-    .cardbtn{
-        width: 100%;
-        height: 40px;
-    }
-
-    .cardbtn button{
-        width: 100%;
-        height: 100%;
-        background-color: #e95a08;
-        color: #fff;
-        text-transform: uppercase;
-        text-align: center;
-        border: none;
-        outline: none;
-        font-weight: 600;
-        font-family: "Inter Tight", sans-serif;
-        cursor: pointer;
-    }
-
-    .flower_lover{
-        width: 100%;
-        /* height: 550px; */
-    }
 
     .badge{
         display: none;
     }
 
-    html{
-        scroll-behavior: smooth;
+    .flower_lover{
+        height: 100%;
     }
-
-    .f_main{
-        width: 100%;
-        /* height: 100%; */
-    }
-
 
     .brawl{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .f_right{
-        width: 100%;
-        height: 100%;
-    }
-
-    .right_title{
-        width: 350px;
-        margin-bottom: 15px;
-        margin-left: 10px;
-    }
-
-    .right_title h3{
-        font-family: "Noto Serif", serif;
-        font-size: 1.6rem;
-        text-transform: capitalize;
-        text-wrap: wrap;
-        padding: 15px 0;
-    }
-
-
-    .right_para{
-        width: 100%;
-        height: auto;
-    }
-
-    .right_para ul li{
-        font-size: 1.1rem;
-        color: grey;
-        font-weight: 400;
-        padding: 10px;
-    }
-
-    .right_para ul {
-        width: 450px;
-        height: auto;
-        margin-left: 30px;
-    }
-
-
-    .offer{
-        width: 100%;
-    }
-
-    .offer-main{
-        width: 90%;
-        margin: 0 auto;
-    }
-
-    .offer-top{
-        width: 380px;
-        height: 120px;
-    }
-
-    .title{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-    }
-
-    .title h1{
-        font-family: "Noto Seif", serif;
-        text-transform: capitalize;
-        font-size: 1.8rem;
-        padding: 10px;
-    }
-
-    .title h1 span{
-        color: #e95a08;
-    }
-
-    .title p{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 13px;
-        color: grey;
-        font-weight: 400;
-        text-transform: capitalize;
-        padding: 13px;
-        margin-bottom: 10px;
-    }
-
-
-    .offer-grid{
-        width: 400px;
-    }
-
-
-    .master{
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 15px;
-        padding: 15px;
-    }
-
-    .grid-one{
-        width: 100%;
-        height: 200px;
-        background-image: url(assets/deal-bloom.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        gap: 10px;
-        position: relative;
-    }
-
-    .grid-two{
-        width: 100%;
-        height: 200px;
-        background-image: url(assets/deal-ana.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
-    }
-    
-    .grid-one::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        border-radius: 15px;
-    }
-
-    .grid-two::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        border-radius: 15px;
-    }
-
-    .child{
-        width: 100%;
-        height: 200px;
-        background-image: url(assets/deal-zabo.png);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
-        position: relative;
-    }
-
-
-    .master h3{
-        font-family: "Notot Serif", sans-serif;
-        font-size: 25px;
-        color: #fff;
-        text-transform: capitalize;
-        font-weight: 600;
-        z-index: 1;
-    }
-
-    .master p{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 18px;
-        color:#fff;
-        text-transform: capitalize;
-        text-decoration: underline;
-        font-weight: 500;
-        z-index: 1;
-    }
-
-    .child h3{
-        font-family: "Notot Serif", sans-serif;
-        font-size: 25px;
-        color: #fff;
-        text-transform: capitalize;
-        font-weight: 600;
-        z-index: 1;
-    }
-
-    .child p{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 18px;
-        color:#fff;
-        text-transform: capitalize;
-        text-decoration: underline;
-        font-weight: 500;
-        z-index: 1;
-    }
-
-
-    .child::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 1;
-        border-radius: 15px;
-    }
-
-    .newsletter{
-        width: 100%;
-        height: 300px;
-        background-image: url(assets/news-letter-bg.png);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-top: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-
-    .join-title{
-        width: 400px;
-        text-align: center;
-    }
-
-    .join-title h3 {
-        font-size: 1.5rem;
-        padding: 10px;
-        text-transform: capitalize;
-        color: #fff;
-    }
-
-    .input {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .input input {
-        flex-grow: 1;
-        height: 45px;
-        font-size: 1rem;
-        padding: 10px 15px;
-        width: 200px;
-        max-width: 100%;
-        box-sizing: border-box;
-    }
-
-    .input button {
-        height: 45px;
-        font-size: 0.95rem;
-        padding: 0 15px;
-        white-space: nowrap;
-        flex-shrink: 0;
-        background-color:#e95a08;
-        color: #fff;
-        text-transform: capitalize;
-        font-weight: 600;
-        border: none;
-        outline: none;
-    }
-
-    .footer{
-        width: 100%;
-        height: 900px;
-    }
-
-    .footer-body{
-        width: 100%;
-        height: 100%;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .f-logo{
-        width: 100%;
-        height: 160px;
-        padding: 15px 0;
-    }
-
-    .f-logo p{
-        font-family: "Inter Tight", sans-serif;
-        font-size: 1.0rem;
-        text-transform: capitalize;
-        color: grey;
-        font-weight: 500;
-        padding: 10px 0;
-    }
-
-
-    .important-links{
-        height: 500px;
-    }
-
-    .menus{
-        height: 300px;
-    }
-
-
-    .menus ul {
-        display: block;
-    }
-
-    .menus ul li{
-        list-style: none;
-        text-transform: capitalize;
-        font-family: "Inter Tight", sans-serif;
-        padding: 13px 0;
-        font-weight: 400;
-        color: grey
-    }
-
-
-    .social-links{
-        width: 100%;
-        height: 60px;
-    }
-
-    .s-main{
-        width: 100%;
-        height: 100%;
-    }
-
-    .s-grid{
-        display: grid;
-        grid-template-columns: 50px 50px 50px 50px;
-    }
-
-    .s-1{
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
     }
 }
