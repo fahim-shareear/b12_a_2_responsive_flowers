@@ -767,7 +767,7 @@ nav ul li a.active{
         align-items: center;
     }
     .header{
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: 600px;
     }
     .nav_link{
