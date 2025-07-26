@@ -994,6 +994,50 @@ nav ul li a.active{
     .f_main{
         width: 100%;
         /* height: 100%; */
-        overflow: hidden;
     }
+
+
+    .brawl{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .f_right{
+        width: 100%;
+        height: 100%;
+    }
+
+    .right_title{
+        width: 350px;
+        margin-bottom: 15px;
+        margin-left: 10px;
+    }
+
+    .right_title h3{
+        font-family: "Noto Serif", serif;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        text-wrap: wrap;
+        padding: 15px 0;
+    }
+
+
+    .right_para{
+        width: 100%;
+        height: auto;
+    }
+
+    .right_para ul li{
+        font-size: 1.1rem;
+        color: grey;
+        font-weight: 400;
+        padding: 10px;
+    }
+
+    .right_para ul {
+        width: 450px;
+        height: auto;
+        margin-left: 30px;
+    }
+
 }
