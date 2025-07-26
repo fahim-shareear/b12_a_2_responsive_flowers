@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
-/*
+
 .d_small{
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
@@ -745,12 +745,12 @@ nav ul li a.active{
 .s-1 img{
     width: 100%;
     height: 100%;
-} */
+}
 
 
 
 
-@media (max-width: 430px) {
+@media screen and (min-width: 430px) and (max-width: 570px){
     *{
         margin: 0;
         padding: 0;
