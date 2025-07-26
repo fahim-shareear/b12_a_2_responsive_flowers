@@ -1200,7 +1200,7 @@ nav ul li a.active{
     }
 
     .child p{
-        ont-family: "Inter Tight", sans-serif;
+        font-family: "Inter Tight", sans-serif;
         font-size: 18px;
         color:#fff;
         text-transform: capitalize;
