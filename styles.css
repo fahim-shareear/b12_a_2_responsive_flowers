@@ -1111,6 +1111,7 @@ nav ul li a.active{
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        position: relative;
     }
 
     .grid-two{
@@ -1126,6 +1127,31 @@ nav ul li a.active{
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        position: relative;
+    }
+    
+    .grid-one::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    .grid-two::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        border-radius: 15px;
     }
 
     .child{
@@ -1141,5 +1167,58 @@ nav ul li a.active{
         justify-content: center;
         flex-direction: column;
         gap: 10px;
+        position: relative;
+    }
+
+
+    .master h3{
+        font-family: "Notot Serif", sans-serif;
+        font-size: 25px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        z-index: 1;
+    }
+
+    .master p{
+        font-family: "Inter Tight", sans-serif;
+        font-size: 18px;
+        color:#fff;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+    .child h3{
+        font-family: "Notot Serif", sans-serif;
+        font-size: 25px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 600;
+        z-index: 1;
+    }
+
+    .child p{
+        ont-family: "Inter Tight", sans-serif;
+        font-size: 18px;
+        color:#fff;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-weight: 500;
+        z-index: 1;
+    }
+
+
+    .child::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+        border-radius: 15px;
     }
 }
